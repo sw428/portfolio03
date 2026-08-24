@@ -1,0 +1,85 @@
+@charset "UTF-8";
+
+/* Variables
+===================================*/
+
+:root {
+  --color-text: #333333;
+}
+
+/* Base
+===================================*/
+
+html {
+  font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1rem;
+  font-family: "Yu Gothic", "YuGothic", sans-serif;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+/* Typography
+===================================*/
+
+.type-11-regular {
+  font-size: 11px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* Layout
+===================================*/
+
+.l-page {
+  /* max-width: 1600px;
+  margin-inline: auto; */
+}
+
+.l-inner {
+  /* width: calc(100% - 60px);
+  max-width: 1020px;
+  margin-inline: auto; */
+}
+
+/* Utility
+===================================*/
+
+.u-pc-only {
+  display: none;
+}
+
+/* Tablet
+===================================*/
+
+@media (min-width: 768px) {
+  .u-sp-only {
+    display: none;
+  }
+
+  .u-pc-only {
+    display: revert;
+  }
+}
