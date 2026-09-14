@@ -6,12 +6,6 @@
 :root {
   --color-black: #000000;
   --color-white: #ffffff;
-  --color-blue: #45ccc4;
-  --color-light-blue: #ecfcfb;
-  --color-gray: #333333;
-  --color-light-gray: #f5f5f5;
-  --color-red: #eb4e45;
-  --color-yellow: #ffff00;
 }
 
 /* Base
@@ -49,10 +43,9 @@ ol {
 }
 
 /* Typography
-===================================*/
+=================================== */
 
 /* Regular */
-
 .type-12-regular {
   font-size: 12px;
   font-weight: 400;
@@ -78,7 +71,6 @@ ol {
 }
 
 /* Medium */
-
 .type-12-medium {
   font-size: 12px;
   font-weight: 500;
@@ -98,7 +90,6 @@ ol {
 }
 
 /* Bold */
-
 .type-14-bold {
   font-size: 14px;
   font-weight: 700;
@@ -159,14 +150,14 @@ ol {
 ===================================*/
 
 .l-page {
-  /* max-width: 1600px;
-  margin-inline: auto; */
+  max-width: 1400px;
+  margin-inline: auto;
 }
 
 .l-inner {
-  /* width: calc(100% - 60px);
-  max-width: 1020px;
-  margin-inline: auto; */
+  max-width: 840px;
+  width: calc(100% - 40px);
+  margin-inline: auto;
 }
 
 /* Utility
@@ -176,10 +167,78 @@ ol {
   display: none;
 }
 
+/* header
+--------------------------------*/
+
+.mv {
+  position: relative;
+}
+
+.mv__media {
+}
+.mv__image {
+}
+
+.mv__logo,
+.mv__catch,
+.mv__badge {
+  position: absolute;
+}
+
+.mv__logo {
+  inset: 0;
+}
+
+.mv__catch {
+  inset: 0;
+}
+
+.mv__badge {
+  inset: 0;
+}
+
+/* .course-arrow
+--------------------------------*/
+.course {
+  text-align: center;
+}
+
+.section-title {
+}
+
+.course-name {
+}
+
+.course-schedule {
+  margin-inline: auto;
+}
+
+.course-text {
+}
+
+.course-arrow {
+}
+
+.flex {
+}
+
+.item {
+}
+
+.title {
+}
+
+.img {
+}
+
+.text {
+}
+
 /* Tablet
 ===================================*/
-
 @media (min-width: 768px) {
+  /* Utility
+  ===================================*/
   .u-sp-only {
     display: none;
   }
@@ -187,4 +246,7 @@ ol {
   .u-pc-only {
     display: revert;
   }
+
+  /* Layout
+  ===================================*/
 }

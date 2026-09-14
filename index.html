@@ -2,141 +2,353 @@
 <html lang="ja">
 
 <head>
+  <!-- ページ情報・SNS共有画像・CSSの読み込み -->
   <meta charset="UTF-8">
   <meta name="description"
     content="AZAMINA進学スクールの「夏期限定」特別講習がスタートしました。グループ講習とオンライン講習の2コースからお選びいただけます。1か月間の短期集中講座であなたの学力アップをお約束いたします。">
   <title>「夏期限定」特別講習スタート！ AZAMINA進学スクール</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta property="og:image" content="./img/ogp.jpg">
-  <link rel="icon" href="./img/favicon.png">
+  <meta property="og:image" content="./img/common/ogp.jpg">
+  <link rel="icon" href="./img/common/favicon.png">
   <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
 
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
+  <div class="l-page">
+    <main>
+      <!-- ========== メインビジュアル ========== -->
+      <header class="mv">
+        <picture class="mv__media">
+          <source media="(min-width: 768px)" srcset="./img/mv/mv-pc.png" width="1920" height="1098">
+          <img class="mv__image" src="./img/mv/mv-sp.png" alt="" width="780" height="1000">
+        </picture>
+        <h1><img class="mv__logo" src="./img/mv/logo.svg" alt="AZAMINA進学スクール" width="248" height="22"></h1>
+        <p><img class="mv__catch" src="./img/mv/text.svg" alt="この夏で決まる！本気で合格を目指すなら AZAMINA進学スクール"></p>
+        <img class="mv__badge" src="./img/mv/badge.svg" alt="満足度100% ※2022年3月時点、当社独自調査により算出">
+      </header>
 
-  <main>
-    <section class="mv">
-      <img class="mv__image" src="./img/mv/mv.png" alt="">
-
-      <img class="mv__logo" src="./img/mv/logo.svg" alt="AZAMINA進学スクール">
-
-      <img class="mv__catch" src="./img/mv/header-text.svg" alt="この夏で決まる！本気で合格を目指すなら AZAMINA進学スクール">
-
-      <img class="mv__badge" src="./img/mv/badge.svg" alt="満足度100% ※2022年3月時点、当社独自調査により算出">
-    </section>
-
-    <section class="course">
-      <img src="./img/course/course-title.svg" alt="">
-      <p>＜短期集中の特別カリキュラム＞</p>
-      <img src="./img/course/course-schedule.svg" alt="">
-      <img src="./img/course/course-text.svg" alt="">
-      <img src="./img/course/course-arrow.svg" alt="">
-      <div>
-        <ul>
-          <li>
-            <img src="./img/course/course-group-title.svg" alt="">
-            <img src="./img/course/course-group.jpg" alt="">
-            <p>最大5名でのグループ講習。分からない問題を教え合ったり仲間と一緒に頑張りたい人向けの講習です。</p>
-          </li>
-          <li>
-            <img src="./img/course/course-online-title.svg" alt="">
-            <img src="./img/course/course-online.jpg" alt="">
-            <p>完全オンライン型の集中講習。好きな時間に自分のペースで勉強したい人向けの講習です。</p>
-          </li>
-        </ul>
-      </div>
-
-      <section class="feature">
+      <!-- ========== 講習案内 ========== -->
+      <section class="course" id="course">
+        <!-- 講習のタイトル・日程・案内 -->
+        <img src="./img/course/course-title.svg" alt="">
+        <p>＜短期集中の特別カリキュラム＞</p>
+        <img src="./img/course/course-schedule.svg" alt="">
+        <img src="./img/course/course-text.svg" alt="">
+        <img src="./img/course/course-arrow.svg" alt="">
+        <!-- 2つの講習コース -->
         <div>
+          <ul>
+            <!-- グループ講習 -->
+            <li>
+              <img src="./img/course/course-group-title.svg" alt="">
+              <img src="./img/course/course-group.jpg" alt="">
+              <p>最大5名でのグループ講習。分からない問題を教え合ったり仲間と一緒に頑張りたい人向けの講習です。</p>
+            </li>
+            <!-- オンライン講習 -->
+            <li>
+              <img src="./img/course/course-online-title.svg" alt="">
+              <img src="./img/course/course-online.jpg" alt="">
+              <p>完全オンライン型の集中講習。好きな時間に自分のペースで勉強したい人向けの講習です。</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- ========== スクールの5つの特徴 ========== -->
+      <section class="feature" id="feature">
+        <!-- 特徴エリアのアイコン・見出し -->
+        <div class="feature__icon">
           <img src="./img/feature/icon-feature.svg" alt="">
         </div>
-        <h2>AZAMINA進学スクール 5つの特徴</h2>
-        <ul>
-          <li><a href=""><img src="./img/feature/feature-1.svg" alt="#feature01"></a></li>
-          <li><a href=""><img src="./img/feature/feature-2.svg" alt="#feature02"></a></li>
-          <li><a href=""><img src="./img/feature/feature-3.svg" alt="#feature03"></a></li>
-          <li><a href=""><img src="./img/feature/feature-4.svg" alt="#feature04"></a></li>
-          <li><a href=""><img src="./img/feature/feature-5.svg" alt="#feature05"></a></li>
-        </ul>
+        <h2 class="feature__title">AZAMINA進学スクール 5つの特徴</h2>
+        <!-- 各特徴へ移動するナビゲーション -->
+        <div class="feature-index">
+          <ul class="feature__nav">
+            <li class="feature__nav-item">
+              <a class="feature__nav-link" href="#feature01">
+                <img class="feature__nav-image" src="./img/feature/feature-1.svg" alt="特徴1 豊富なカリキュラム">
+              </a>
+            </li>
+            <li class="feature__nav-item">
+              <a class="feature__nav-link" href="#feature02">
+                <img class="feature__nav-image" src="./img/feature/feature-2.svg" alt="特徴2">
+              </a>
+            </li>
+            <li class="feature__nav-item">
+              <a class="feature__nav-link" href="#feature03">
+                <img class="feature__nav-image" src="./img/feature/feature-3.svg" alt="特徴3">
+              </a>
+            </li>
+            <li class="feature__nav-item">
+              <a class="feature__nav-link" href="#feature04">
+                <img class="feature__nav-image" src="./img/feature/feature-4.svg" alt="特徴4">
+              </a>
+            </li>
+            <li class="feature__nav-item">
+              <a class="feature__nav-link" href="#feature05">
+                <img class="feature__nav-image" src="./img/feature/feature5.svg" alt="特徴5">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- ========== 特徴1：豊富なカリキュラム ========== -->
+        <section class="curriculum" id="feature01">
+          <!-- 見出し・説明文 -->
+          <h3 class="curriculum__title">
+            <picture>
+              <source media="(min-width: 768px)" srcset="./img/feature/01-curriculum/feature-title-1-pc.svg">
+              <img src="./img/feature/01-curriculum/feature-title-1-sp.svg" alt="1 豊富なカリキュラム">
+            </picture>
+          </h3>
+          <p class="curriculum__text">
+            AZAMINA進学スクールでは、豊富なカリキュラムの中から、
+            自分にあったカリキュラムを選択していただけます。
+          </p>
+          <!-- 講座の概要一覧 -->
+          <ul class="curriculum__list">
+            <!-- 基礎講座 -->
+            <li class="curriculum__item">
+              <h4 class="curriculum__item-title">
+                基礎講座
+              </h4>
+              <img class="curriculum__item-image" src="./img/feature/01-curriculum/feature1-img.png" alt="">
+              <p class="curriculum__item-text">
+                全ての科目の基礎をひと通り復習するための講座です。もう一度基礎
+                を固めなおしたい方におすすめです。
+              </p>
+            </li>
+            <!-- テーマ別講座 -->
+            <li class="curriculum__item">
+              <h4 class="curriculum__item-title">
+                テーマ別講座
+              </h4>
+              <p class="curriculum_item-text">苦手分野を集中的に勉強したり、得意分野をさらに伸ばすため
+                のテーマを絞った講座です。受講するテーマは自由に選択して
+                いただけます。</p>
+            </li>
+            <!-- 大学別対策講座 -->
+            <li class="curriculum__item">
+              <h4 class="curriculum__item-title">
+                大学別対策講座
+              </h4>
+              <p class="curriculum__item-text">
+                特定の大学にターゲットを絞り、その大学に特化した対策・勉
+                強を行うための講座です。※選択した大学ごとにカリキュラム
+                の内容が異なります。
+              </p>
+            </li>
+          </ul>
+
+          <!-- カリキュラム紹介へのリンク -->
+          <a class="introduction__link" href="#">
+            <span class="introduction__link-text"><img src="./img/common/link.svg" alt="">
+            </span>
+          </a>
+
+          <!-- カリキュラムの紹介：講座ごとの学習内容 -->
+          <div class="introduction">
+            <h4 class="introduction__title">カリキュラムの紹介</h4>
+            <ul class="introduction__list">
+              <li class="introduction__item">
+                <h5 class="introduction__item-title">基礎講座</h5>
+                <div>
+                  <img src="./img/feature/01-curriculum/text/curriculum-basic-list.svg" alt="">
+                </div>
+              </li>
+              <li class="introduction__item">
+                <h5 class="introduction__item-title">テーマ別講座</h5>
+                <img src="./img/feature/01-curriculum/text/curriculum-theme-list.svg" alt="">
+              </li>
+              <li class="introduction__item">
+                <h5 class="introduction__item-title">大学別対策講座</h5>
+                <img src="./img/feature/01-curriculum/text/curriculum-common-label.svg" alt="">
+                <img src="./img/feature/01-curriculum/text/curriculum-university-list.svg" alt="">
+              </li>
+              <!-- 共通試験対策についての補足 -->
+              <div>
+                <img src="./img/feature/01-curriculum/text/curriculum-common-line.svg" alt="">
+                <img src="./img/feature/01-curriculum/text/curriculum-common-note.svg" alt="">
+              </div>
+              <li class="introduction__item">
+                <h5 class="introduction__item-title">共通試験対策講座</h5>
+                <img src="./img/feature/01-curriculum/text/curriculum-common-label.svg" alt="">
+                <img src="./img/feature/01-curriculum/text/curriculum-common-test-list.svg" alt="">
+              </li>
+            </ul>
+          </div>
+
+          <!-- カリキュラムの補足画像 -->
+          <div>
+            <img src="./img/feature/01-curriculum/point-1.svg" alt="">
+            <img src="./img/feature/01-curriculum/group-2.svg" alt="">
+          </div>
+        </section>
+
+        <!-- ========== 特徴2：生徒の満足度 ========== -->
+        <section class="satisfaction" id="feature02">
+          <!-- 見出し・説明文 -->
+          <h3 class="satisfaction__title">
+            <picture>
+              <source media="(min-width: 768px)" srcset="./img/feature/02-satisfaction/feature-title-2-pc.svg">
+              <img src="./img/feature/02-satisfaction/feature-title-2-sp.svg" alt="特徴2">
+            </picture>
+          </h3>
+          <p class="satisfaction__text">
+            AZAMINA進学スクールは、講座を受講した全ての生徒から
+            非常に高い満足度を得ています。
+            受講前のカウンセリングをしっかりと行い、
+            結果につながるカリキュラムをご提案いたします。
+          </p>
+          <img src="./img/feature/02-satisfaction/mask_group.png" alt="">
+        </section>
+
+        <!-- ========== 特徴3：講師陣 ========== -->
+        <section class="teacher" id="feature03">
+          <!-- 見出し・説明文 -->
+          <h3 class="teacher__title">
+            <picture>
+              <source media="(min-width: 768px)" srcset="./img/feature/03-teacher/feature-title-3-pc.svg">
+              <img src="./img/feature/03-teacher/feature-title-3-sp.svg" alt="特徴3">
+            </picture>
+          </h3>
+          <p class="teacher__text">
+            AZAMINA進学スクールの講師陣は、高い選考基準をクリアした
+            よりすぐりのメンバーだけで構成されています。
+            ただ学力や知識のレベルが高いだけでなく指導方法の引き出しも豊富なため、
+            生徒の理解度を把握しながら最適な指導で目標達成へ導きます。
+          </p>
+          <!-- 講師紹介の詳細 -->
+          <div class="teacher__content">
+            <h4>講師の紹介</h4>
+          </div>
+          <div>
+            <img src="./img/feature/teacher/subjects/" alt="">
+            <p>講師　氏名</p>
+            <p>講師のコメントが入ります。講師のコメントが入ります。講師のコメントが入ります。</p>
+          </div>
+          <div>
+            <img src="./img/feature/teacher/subjects/" alt="">
+            <p>講師　氏名</p>
+            <p>講師のコメントが入ります。講師のコメントが入ります。講師のコメントが入ります。</p>
+          </div>
+          <div>
+            <img src="./img/feature/teacher/subjects/" alt="">
+            <p>講師　氏名</p>
+            <p>講師のコメントが入ります。講師のコメントが入ります。講師のコメントが入ります。</p>
+          </div>
+          <div>
+            <img src="./img/feature/teacher/subjects/" alt="">
+            <p>講師　氏名</p>
+            <p>講師のコメントが入ります。講師のコメントが入ります。講師のコメントが入ります。</p>
+          </div>
+          <div>
+            <img src="./img/feature/teacher/subjects/" alt="">
+            <p>講師　氏名</p>
+            <p>講師のコメントが入ります。講師のコメントが入ります。講師のコメントが入ります。</p>
+          </div>
+          <div>
+            <img src="./img/feature/teacher/subjects/" alt="">
+            <p>講師　氏名</p>
+            <p>講師のコメントが入ります。講師のコメントが入ります。講師のコメントが入ります。</p>
+          </div>
+          <div>
+            <img src="./img/feature/teacher/subjects/" alt="">
+            <p>講師　氏名</p>
+            <p>講師のコメントが入ります。講師のコメントが入ります。講師のコメントが入ります。</p>
+          </div>
+          <div>
+            <img src="./img/feature/teacher/subjects/" alt="">
+            <p>講師　氏名</p>
+            <p>講師のコメントが入ります。講師のコメントが入ります。講師のコメントが入ります。</p>
+          </div>
+          <div>
+            <img src="./img/feature/teacher/subjects/" alt="">
+            <p>講師　氏名</p>
+            <p>講師のコメントが入ります。講師のコメントが入ります。講師のコメントが入ります。</p>
+          </div>
+          <img src="./img/feature/03-teacher/link.svg" alt="">
+        </section>
+
+        <!-- ========== 特徴4：合格実績 ========== -->
+        <section class="result" id="feature04">
+          <!-- 見出し・説明文 -->
+          <h3 class="result__title">
+            <picture>
+              <source media="(min-width: 768px)" srcset="./img/feature/04-result/feature-title-4-pc.svg">
+              <img src="./img/feature/04-result/feature-title-4-sp.svg" alt="特徴4">
+            </picture>
+          </h3>
+          <p class="result__text">
+            AZAMINA進学スクールは、生徒の最終目標である
+            「志望校合格」にとことんこだわります。
+            その結果、おかげさまで毎年高い合格率を達成しています。
+          </p>
+          <!-- 合格実績の詳細 -->
+          <div class="result__content">
+            <img src="./img/feature/04-result/graph.svg" alt="">
+          </div>
+          <p>生徒の声</p>
+          <div>
+            <img src="./img/feature/04-result/student1.png" alt="">
+            <p>生徒　名前</p>
+            <p>生徒のコメントがはいります生徒のコメントがはいります生徒のコメントがはいります生徒のコメントがはいります生徒のコメントがはいります。</p>
+          </div>
+          <div>
+            <img src="./img/feature/04-result/student2.png" alt="">
+            <p>生徒　名前</p>
+            <p>生徒のコメントがはいります生徒のコメントがはいります生徒のコメントがはいります生徒のコメントがはいります生徒のコメントがはいります。</p>
+          </div>
+          <div>
+          </div>
+        </section>
+
+        <!-- ========== 特徴5：受講中・受講後のサポート ========== -->
+        <section class="follow" id="feature05">
+          <!-- 見出し・説明文 -->
+          <h3 class="follow__title">
+            <picture>
+              <source media="(min-width: 768px)" srcset="./img/feature/05-follow/feature-title-5-pc.svg">
+              <img src="./img/feature/05-follow/feature-title-5-sp.svg" alt="特徴5">
+            </picture>
+          </h3>
+          <p class="follow__text">
+            AZAMINA進学スクールは、受講中だけでなく
+            受講後のサポートにも力を入れています。
+            生徒が安心して勉強に専念できるように、
+            万全のサポート体制を整えています。
+          </p>
+          <!-- サポート内容の詳細 -->
+          <div class="follow__content">
+            <h4>主なサポート</h4>
+            <ul class="follow__list">
+              <li class="follow__item"><img src="./img/feature/05-follow/support/email-support.svg" alt=""></li>
+              <li class="follow__item"><img src="./img/feature/05-follow/support/career-advice.svg" alt=""></li>
+              <li class="follow__item"><img src="./img/feature/05-follow/support/latest-information.svg" alt=""></li>
+              <li class="follow__item"><img src="./img/feature/05-follow/support/study-plan-advice.svg" alt=""></li>
+              <li class="follow__item"><img src="./img/feature/05-follow/support/individual-question.svg" alt=""></li>
+              <li class="follow__item"><img src="./img/feature/05-follow/support/performance-management.svg" alt="">
+              </li>
+              <li class="follow__item"><img src="./img/feature/05-follow/support/review-test.svg" alt=""></li>
+              <li class="follow__item"><img src="./img/feature/05-follow/support/self-study-materials.svg" alt=""></li>
+              <li class="follow__item"><img src="./img/feature/05-follow/support/study-room.svg" alt=""></li>
+            </ul>
+          </div>
+          <p>その他にも生徒全員の学習をフォローする
+            充実したサポートが揃っています！</p>
+        </section>
       </section>
-
-      <section>
-        <h3>
-          <picture class="__media">
-            <source media="(min-width: 768px)" srcset="./img/feature/feature-title-1-pc.svg">
-            <img class="__image" src="./img/feature/feature-title-1-sp.svg" alt="" width="" height="">
-          </picture>
-        </h3>
-        <p>AZAMINA進学スクール では、豊富なカリキュラムの中から、
-          自分にあったカリキュラムを選択していただけます。
-        </p>
+      <section class="messege">
+        <img src="./img/messege/road.png" alt="">
+        <h2>結果を大切にする</h2>
+        <img src="./img/messege/messege.svg" alt="">
       </section>
+    </main>
 
-      <section>
-        <h3>
-          <picture class="__media">
-            <source media="(min-width: 768px)" srcset="./img/feature/feature-title-2-pc.svg">
-            <img class="__image" src="./img/feature/feature-title-2-sp.svg" alt="" width="" height="">
-          </picture>
-        </h3>
-        <p>AZAMINA進学スクール は、講座を受講した全ての生徒から
-          非常に高い満足度を得ています。
-          受講前のカウンセリングをしっかりと行い、
-          結果につながるカリキュラムをご提案いたします。
-        </p>
-      </section>
+    <footer>
 
-      <section>
-        <h3>
-          <picture class="__media">
-            <source media="(min-width: 768px)" srcset="./img/feature/feature-title-3-pc.svg">
-            <img class="__image" src="./img/feature/feature-title-3-sp.svg" alt="" width="" height="">
-          </picture>
-        </h3>
-        <p>AZAMINA進学スクールの講師陣は、高い選考基準をクリアした
-          よりすぐりのメンバーだけで構成されています。
-          ただ学力や知識のレベルが高いだけでなく指導方法の引き出しも豊富なため、
-          生徒の理解度を把握しながら最適な指導で目標達成へ導きます。
-        </p>
-      </section>
-
-      <section>
-        <h3>
-          <picture class="__media">
-            <source media="(min-width: 768px)" srcset="./img/feature/feature-title-4-pc.svg">
-            <img class="__image" src="./img/feature/feature-title-4-sp.svg" alt="" width="" height="">
-          </picture>
-        </h3>
-        <p>AZAMINA進学スクール は、生徒の最終目標である
-          「志望校合格」にとことんこだわります。
-          その結果、おかげさまで毎年高い合格率を達成しています。
-        </p>
-      </section>
-
-      <section>
-        <h3>
-          <picture class="__media">
-            <source media="(min-width: 768px)" srcset="./img/feature/feature-title-5-pc.svg">
-            <img class="__image" src="./img/feature/feature-title-5-sp.svg" alt="" width="" height="">
-          </picture>
-        </h3>
-        <p>AZAMINA進学スクール は、受講中だけでなく
-          受講後のサポートにも力を入れています。
-          生徒が安心して勉強に専念できるように、万全のサポート体制を整えています。
-        </p>
-
-      </section>
-
-
-    </section>
-
-
-  </main>
-
-  <footer class="footer">
-  </footer>
+    </footer>
+  </div>
 
 
 </body>
