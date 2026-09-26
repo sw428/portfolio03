@@ -6,6 +6,7 @@
 :root {
   --color-black: #000000;
   --color-white: #ffffff;
+  --color-red: #eb4e45;
 }
 
 /* Base
@@ -172,6 +173,7 @@ ol {
 
 .mv {
   position: relative;
+  width: 100%;
 }
 
 .mv__media {
@@ -186,52 +188,151 @@ ol {
 }
 
 .mv__logo {
-  inset: 0;
+  top: 22px;
+  left: 20px;
 }
 
 .mv__catch {
-  inset: 0;
+  top: 80px;
+  left: 20px;
+  width: 210px;
 }
 
 .mv__badge {
-  inset: 0;
+  right: 16px;
+  bottom: -50px;
+  width: 190px;
 }
 
-/* .course-arrow
+/* course
 --------------------------------*/
-.course {
+.course__lead {
   text-align: center;
 }
 
-.section-title {
-}
-
-.course-name {
-}
-
-.course-schedule {
+.course__title {
   margin-inline: auto;
 }
 
-.course-text {
+.course__schedule {
+  margin-inline: auto;
 }
 
-.course-arrow {
+.course__text {
+  margin-inline: auto;
 }
 
-.flex {
+.course__arrow {
+  margin-inline: auto;
 }
 
-.item {
+.course__content {
 }
 
-.title {
+.course__list {
 }
 
-.img {
+.course__item {
 }
 
-.text {
+.course__item-title {
+  margin-inline: auto;
+}
+
+.course__image {
+  margin-inline: auto;
+}
+
+.course__description {
+  text-align: center;
+}
+
+/* Feature
+--------------------------------*/
+.feature {
+}
+
+.feature__icon-image {
+  margin-inline: auto;
+}
+
+.feature__title {
+  text-align: center;
+}
+
+.feature-index {
+}
+
+.feature__nav {
+}
+
+.feature__nav-item {
+}
+
+.feature__nav-link {
+}
+
+.feature__nav-image {
+}
+
+/* curriculum
+--------------------------------*/
+.curriculum {
+}
+
+.curriculum__title {
+}
+
+.curriculum__text {
+}
+
+.curriculum__list {
+}
+
+.curriculum__item {
+  max-width: 380px;
+  margin-inline: auto;
+}
+
+.curriculum__item-title {
+  background-color: var(--color-red);
+  color: var(--color-white);
+  text-align: center;
+}
+
+.curriculum__item-image {
+}
+
+.curriculum__item-text {
+}
+
+.curriculum_item-text {
+}
+
+.introduction__link {
+  display: block;
+  width: fit-content;
+  margin-inline: auto;
+}
+
+.introduction__link-text {
+  margin-inline: auto;
+}
+
+.introduction {
+}
+
+.introduction__title {
+  text-align: center;
+}
+
+.introduction__list {
+}
+
+.introduction__item {
+}
+
+.introduction__item-title {
 }
 
 /* Tablet
