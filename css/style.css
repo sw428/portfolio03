@@ -7,7 +7,9 @@
   --color-black: #000000;
   --color-white: #ffffff;
   --color-red: #eb4e45;
+  --color-light-blue: #ecfcfb;
   --color-rectangle: rgba(69, 204, 196, 0.5);
+  --color-yellow: #ffff00;
 }
 
 /* Base
@@ -330,6 +332,9 @@ ol {
 }
 
 .curriculum__list {
+  display: grid;
+  gap: 37px;
+  margin-bottom: 35px;
 }
 
 .curriculum__item {
@@ -351,10 +356,29 @@ ol {
 .curriculum__item-text {
 }
 
-.introduction__link {
-  display: block;
-  width: fit-content;
-  margin-inline: auto;
+.curriculum__item:nth-child(n + 2) .curriculum__item-text {
+  padding-inline: 20px;
+}
+
+.curriculum__more {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.curriculum__more-link {
+  display: inline-flex;
+  gap: 16px;
+  align-items: center;
+  text-decoration: underline;
+}
+
+.curriculum__more-link::after {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-top: 1px solid #000;
+  border-right: 1px solid #000;
+  transform: rotate(45deg);
 }
 
 .introduction__link-text {
@@ -362,19 +386,95 @@ ol {
 }
 
 .introduction {
+  padding: 40px 0;
+  background: var(--color-light-blue);
+  margin-bottom: 40px;
+}
+
+.introduction__media {
+}
+
+.introduction__point {
+}
+
+.introduction__point-text {
 }
 
 .introduction__title {
   text-align: center;
+  padding: 10px 0;
+  border-top: 1px solid var(--color-black);
+  border-bottom: 1px solid var(--color-black);
+  margin-bottom: 25px;
 }
 
-.introduction__list {
+.introduction__image {
+  margin: 0 auto;
+  margin-bottom: 30px;
 }
 
-.introduction__item {
+.introduction__point-image {
+  margin-inline: auto;
+  margin-bottom: 18px;
 }
 
-.introduction__item-title {
+.introduction__point-title {
+  margin-bottom: 12px;
+}
+
+.introduction__highlight {
+  background-color: var(--color-yellow);
+}
+
+.satisfaction__image {
+  margin-bottom: 23px;
+}
+
+.satisfaction__text {
+  margin-bottom: 38px;
+}
+
+.satisfaction__decoration {
+  margin-bottom: 50px;
+}
+
+.teacher {
+}
+
+.teacher__title {
+  margin-bottom: 23px;
+}
+
+.teacher__text {
+}
+
+.teacher__content {
+}
+
+.teacher-heading {
+  text-align: center;
+  padding: 10px 0;
+  border-top: 1px solid var(--color-black);
+  border-bottom: 1px solid var(--color-black);
+  margin-bottom: 25px;
+}
+
+.teacher-list {
+}
+
+.teacher-card {
+}
+
+.teacher-photo {
+}
+
+.teacher-name {
+}
+
+.teacher-comment {
+}
+
+.teacher-link {
 }
 
 /* Tablet
