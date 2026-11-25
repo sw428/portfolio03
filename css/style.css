@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
-/* Variables
-===================================*/
+/* 共通カラー
+=================================== */
 
 :root {
   --color-black: #000000;
@@ -10,10 +10,13 @@
   --color-light-blue: #ecfcfb;
   --color-rectangle: rgba(69, 204, 196, 0.5);
   --color-yellow: #ffff00;
+  --color-light-gray: #f5f5f5;
+  --color-gray: #333333;
+  --color-blue: #45ccc4;
 }
 
 /* Base
-===================================*/
+=================================== */
 
 html {
   font-size: 100%;
@@ -39,6 +42,11 @@ img {
 a {
   color: inherit;
   text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  opacity: 0.6;
 }
 
 ul,
@@ -49,7 +57,8 @@ ol {
 /* Typography
 =================================== */
 
-/* Regular */
+/* Regular
+-------------------- */
 
 .t-12-regular {
   font-size: 12px;
@@ -75,7 +84,8 @@ ol {
   line-height: 25.2px;
 }
 
-/* Medium */
+/* Medium
+-------------------- */
 
 .t-12-medium {
   font-size: 12px;
@@ -95,7 +105,8 @@ ol {
   line-height: normal;
 }
 
-/* Bold */
+/* Bold
+-------------------- */
 
 .t-14-bold {
   font-size: 14px;
@@ -153,8 +164,8 @@ ol {
   letter-spacing: 0.08em;
 }
 
-/* Layout
-===================================*/
+/* Layout / 共通の幅・余白
+=================================== */
 
 .l-page {
   max-width: 1400px;
@@ -167,15 +178,36 @@ ol {
   margin-inline: auto;
 }
 
-/* Utility
-===================================*/
+/* Utility / 表示切替などの単機能
+=================================== */
 
 .u-pc-only {
   display: none;
 }
 
-/* header
---------------------------------*/
+/* Component / リンク・ボタン・カードなどの再利用する部品
+===================================*/
+.c-more-link {
+  display: inline-flex;
+  gap: 10.6px;
+  align-items: center;
+  text-decoration: underline;
+}
+
+.c-more-link::after {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-top: 1px solid #000;
+  border-right: 1px solid #000;
+  transform: rotate(45deg);
+}
+
+/* SP
+=================================== */
+
+/* mv
+-------------------------------- */
 
 .mv {
   position: relative;
@@ -186,6 +218,7 @@ ol {
   display: block;
   height: 500px;
 }
+
 .mv__image {
   width: 100%;
   height: 100%;
@@ -216,7 +249,8 @@ ol {
 }
 
 /* course
---------------------------------*/
+-------------------------------- */
+
 .course {
   padding-bottom: 77px;
 }
@@ -276,8 +310,9 @@ ol {
 .course__description {
 }
 
-/* Feature
---------------------------------*/
+/* feature
+-------------------------------- */
+
 .feature {
 }
 
@@ -318,7 +353,8 @@ ol {
 }
 
 /* curriculum
---------------------------------*/
+-------------------------------- */
+
 .curriculum {
   padding-top: 50px;
 }
@@ -365,20 +401,26 @@ ol {
   margin-bottom: 40px;
 }
 
-.curriculum__more-link {
+.more-link {
   display: inline-flex;
   gap: 16px;
   align-items: center;
   text-decoration: underline;
 }
 
-.curriculum__more-link::after {
+.more-link::after {
   content: "";
   width: 7px;
   height: 7px;
   border-top: 1px solid #000;
   border-right: 1px solid #000;
   transform: rotate(45deg);
+}
+
+/* introduction
+-------------------------------- */
+.introduction {
+  padding-top: 50px;
 }
 
 .introduction__link-text {
@@ -389,15 +431,6 @@ ol {
   padding: 40px 0;
   background: var(--color-light-blue);
   margin-bottom: 40px;
-}
-
-.introduction__media {
-}
-
-.introduction__point {
-}
-
-.introduction__point-text {
 }
 
 .introduction__title {
@@ -426,6 +459,12 @@ ol {
   background-color: var(--color-yellow);
 }
 
+/* satisfaction
+-------------------------------- */
+.satisfaction {
+  padding-top: 50px;
+}
+
 .satisfaction__image {
   margin-bottom: 23px;
 }
@@ -434,11 +473,11 @@ ol {
   margin-bottom: 38px;
 }
 
-.satisfaction__decoration {
-  margin-bottom: 50px;
-}
+/* teacher
+-------------------------------- */
 
 .teacher {
+  padding-top: 50px;
 }
 
 .teacher__title {
@@ -449,6 +488,10 @@ ol {
 }
 
 .teacher__content {
+  text-align: center;
+  padding: 10px 0;
+  border-top: 1px solid var(--color-black);
+  border-bottom: 1px solid var(--color-black);
 }
 
 .teacher-heading {
@@ -459,29 +502,191 @@ ol {
   margin-bottom: 25px;
 }
 
-.teacher-list {
+.teacher__list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  row-gap: 20px;
+  column-gap: 3.5%;
+  margin-bottom: 28px;
 }
 
-.teacher-card {
+.teacher__item {
+  padding: 10px;
+  background-color: var(--color-light-gray);
 }
 
-.teacher-photo {
+.teacher__subject {
+  display: inline-flex;
+  background: var(--color-gray);
+  color: var(--color-white);
+  padding: 0 8px;
+  margin-bottom: 10px;
 }
 
-.teacher-name {
+.teacher__name {
+  margin-bottom: 10px;
 }
 
-.teacher-comment {
+.teacher__more-link {
+  text-align: center;
 }
 
-.teacher-link {
+/* result
+--------------------------------*/
+.result {
+  padding-top: 50px;
 }
 
-/* Tablet
-===================================*/
+.result__title {
+  margin-bottom: 23px;
+}
+
+.result__text {
+  margin-bottom: 38px;
+}
+
+.result__content {
+  margin-bottom: 60px;
+}
+
+.result__voice-title {
+  text-align: center;
+  padding: 10px 0;
+  border-top: 1px solid var(--color-black);
+  border-bottom: 1px solid var(--color-black);
+  margin-bottom: 25px;
+}
+
+.result__voice-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.result__voice-item {
+  text-align: center;
+  background-image: url("../img/feature/result/bg-line.png");
+  background-repeat: repeat;
+  max-width: 400px;
+  padding: 20px;
+}
+
+.result__voice-image {
+  width: 180px;
+  border-radius: 50%;
+  margin-inline: auto;
+  margin-bottom: 15px;
+}
+
+.result__voice-name {
+  display: inline-block;
+  margin-bottom: 10px;
+  padding: 3px 15px;
+  background-color: var(--color-white);
+}
+
+/* follow
+--------------------------------*/
+.follow {
+  padding-top: 50px;
+}
+
+.follow__title {
+  margin-bottom: 23px;
+}
+
+.follow__text {
+  margin-bottom: 38px;
+}
+
+.follow__content {
+  padding: 40px 0;
+  background-color: var(--color-light-blue);
+  margin-bottom: 44px;
+}
+
+.follow__content-title {
+  text-align: center;
+  padding: 10px 0;
+  border-top: 1px solid var(--color-black);
+  border-bottom: 1px solid var(--color-black);
+  margin-bottom: 25px;
+}
+
+.follow__list {
+  display: grid;
+  grid-template-columns: 1fr;
+  max-width: 640px;
+  row-gap: 20px;
+  margin-bottom: 20px;
+}
+
+.follow__item {
+}
+
+.follow__item::before {
+  content: "●";
+  color: var(--color-blue);
+}
+
+.follow__message {
+  text-align: center;
+}
+
+/* message
+--------------------------------*/
+.message__img {
+  margin-bottom: 37px;
+}
+
+.message__title {
+  text-align: center;
+  margin-bottom: 38px;
+}
+
+.message__text {
+  text-align: center;
+  margin-bottom: 78px;
+}
+
+.message__emphasis {
+  background-color: var(--color-yellow);
+}
+
+.footer {
+  display: flex;
+  gap: 1px;
+}
+
+.footer__cta {
+  display: inline-flex;
+  width: 100%;
+  max-width: 480px;
+  padding: 28px 0;
+  color: var(--color-white);
+  background-color: var(--color-blue);
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px 10px 0 0;
+}
+
+.footer__cta::after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  border-top: 2px solid var(--color-white);
+  border-right: 2px solid var(--color-white);
+  transform: rotate(45deg);
+}
+/* Tablet / PC
+=================================== */
+
 @media (min-width: 768px) {
-  /* Utility
-  ===================================*/
+  /* utility
+  -------------------------------- */
+
   .u-sp-only {
     display: none;
   }
@@ -490,6 +695,18 @@ ol {
     display: revert;
   }
 
-  /* Layout
-  ===================================*/
+  /* teacher
+  -------------------------------- */
+
+  .teacher__list {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .follow__list {
+    max-width: 640px;
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    justify-content: space-between;
+    margin-inline: auto;
+  }
 }
