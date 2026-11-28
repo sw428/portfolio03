@@ -1,5 +1,4 @@
 @charset "UTF-8";
-
 /* 共通カラー
 =================================== */
 
@@ -187,6 +186,7 @@ ol {
 
 /* Component / リンク・ボタン・カードなどの再利用する部品
 ===================================*/
+
 .c-more-link {
   display: inline-flex;
   gap: 10.6px;
@@ -281,18 +281,12 @@ ol {
   margin-inline: auto;
 }
 
-.course__content {
-}
-
 .course__list {
   display: flex;
   flex-direction: column;
   gap: 40px;
   padding-inline: 20px;
   margin-inline: auto;
-}
-
-.course__item {
 }
 
 .course__item-title {
@@ -307,24 +301,18 @@ ol {
   margin-bottom: 18px;
 }
 
-.course__description {
-}
-
 /* feature
 -------------------------------- */
 
-.feature {
-}
-
 .feature-index {
   background-color: var(--color-rectangle);
-  padding: 83px 0 60px;
+  padding: 50px 0;
 }
 
 .feature__icon {
   max-width: 200px;
   margin-inline: auto;
-  margin-top: -135px;
+  margin-top: -100px;
   margin-bottom: 47px;
 }
 
@@ -343,15 +331,6 @@ ol {
   gap: 10px;
 }
 
-.feature__nav-item {
-}
-
-.feature__nav-link {
-}
-
-.feature__nav-image {
-}
-
 /* curriculum
 -------------------------------- */
 
@@ -365,6 +344,7 @@ ol {
 
 .curriculum__text {
   margin-bottom: 38.2px;
+  text-align: center;
 }
 
 .curriculum__list {
@@ -389,9 +369,6 @@ ol {
   margin-bottom: 9px;
 }
 
-.curriculum__item-text {
-}
-
 .curriculum__item:nth-child(n + 2) .curriculum__item-text {
   padding-inline: 20px;
 }
@@ -401,27 +378,8 @@ ol {
   margin-bottom: 40px;
 }
 
-.more-link {
-  display: inline-flex;
-  gap: 16px;
-  align-items: center;
-  text-decoration: underline;
-}
-
-.more-link::after {
-  content: "";
-  width: 7px;
-  height: 7px;
-  border-top: 1px solid #000;
-  border-right: 1px solid #000;
-  transform: rotate(45deg);
-}
-
 /* introduction
 -------------------------------- */
-.introduction {
-  padding-top: 50px;
-}
 
 .introduction__link-text {
   margin-inline: auto;
@@ -461,6 +419,7 @@ ol {
 
 /* satisfaction
 -------------------------------- */
+
 .satisfaction {
   padding-top: 50px;
 }
@@ -485,16 +444,10 @@ ol {
 }
 
 .teacher__text {
+  margin-bottom: 38px;
 }
 
 .teacher__content {
-  text-align: center;
-  padding: 10px 0;
-  border-top: 1px solid var(--color-black);
-  border-bottom: 1px solid var(--color-black);
-}
-
-.teacher-heading {
   text-align: center;
   padding: 10px 0;
   border-top: 1px solid var(--color-black);
@@ -533,6 +486,7 @@ ol {
 
 /* result
 --------------------------------*/
+
 .result {
   padding-top: 50px;
 }
@@ -542,6 +496,7 @@ ol {
 }
 
 .result__text {
+  text-align: center;
   margin-bottom: 38px;
 }
 
@@ -588,6 +543,7 @@ ol {
 
 /* follow
 --------------------------------*/
+
 .follow {
   padding-top: 50px;
 }
@@ -622,9 +578,6 @@ ol {
   margin-bottom: 20px;
 }
 
-.follow__item {
-}
-
 .follow__item::before {
   content: "●";
   color: var(--color-blue);
@@ -636,6 +589,7 @@ ol {
 
 /* message
 --------------------------------*/
+
 .message__img {
   margin-bottom: 37px;
 }
@@ -657,6 +611,7 @@ ol {
 .footer {
   display: flex;
   gap: 1px;
+  justify-content: center;
 }
 
 .footer__cta {
@@ -680,6 +635,7 @@ ol {
   border-right: 2px solid var(--color-white);
   transform: rotate(45deg);
 }
+
 /* Tablet / PC
 =================================== */
 
@@ -695,16 +651,113 @@ ol {
     display: revert;
   }
 
+  /* mv
+  -------------------------------- */
+
+  .mv__media {
+    height: 800px;
+  }
+
+  .mv__catch {
+    width: auto;
+  }
+
+  .mv__badge {
+    width: auto;
+    right: 28px;
+    bottom: -26px;
+  }
+
+  /* course
+  --------------------------------*/
+
+  .course__list {
+    flex-direction: row;
+  }
+
+  .course__text {
+    margin-bottom: 50px;
+  }
+
+  .course__arrow {
+    max-width: none;
+  }
+
+  /* feature
+  --------------------------------*/
+  .feature__icon {
+    max-width: none;
+    margin-top: -120px;
+    margin-bottom: 35px;
+  }
+
+  .feature__title {
+    font-size: 24px;
+  }
+
+  /* curriculum
+  --------------------------------*/
+
+  .curriculum__list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 40px 80px;
+  }
+
+  .curriculum__item:first-child {
+    grid-column: 1 / -1;
+  }
+
+  /* introduction
+  --------------------------------*/
+
+  .introduction__point {
+    display: flex;
+    gap: 62px;
+    margin-bottom: 20px;
+    align-items: center;
+  }
+
+  .introduction__point-title {
+    margin-bottom: 15px;
+  }
+
+  /* satisfaction
+  --------------------------------*/
+
+  .satisfaction__text {
+    text-align: center;
+  }
+
   /* teacher
   -------------------------------- */
+
+  .teacher__text {
+    text-align: center;
+  }
 
   .teacher__list {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
+  /* result
+  --------------------------------*/
+
+  .result__img {
+    margin-inline: auto;
+  }
+
+  .result__voice-list {
+    flex-direction: row;
+  }
+
+  /* follow
+  --------------------------------*/
+
+  .follow__text {
+    text-align: center;
+  }
+
   .follow__list {
-    max-width: 640px;
-    display: grid;
     grid-template-columns: repeat(3, max-content);
     justify-content: space-between;
     margin-inline: auto;

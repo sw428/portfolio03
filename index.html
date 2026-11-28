@@ -24,9 +24,11 @@
           <source media="(min-width: 768px)" srcset="./img/mv/mv-pc.png" width="1920" height="1098">
           <img class="mv__image" src="./img/mv/mv-sp.png" alt="" width="780" height="1000">
         </picture>
-        <h1><img class="mv__logo" src="./img/mv/logo.svg" alt="AZAMINA進学スクール"></h1>
-        <p><img class="mv__catch" src="./img/mv/header-text.svg" alt=""></p>
-        <img class="mv__badge" src="./img/mv/badge.svg" alt="満足度100% ※2022年3月時点、当社独自調査により算出">
+        <h1 class="mv__logo"><img src="./img/mv/logo.svg" alt="AZAMINA進学スクール"></h1>
+        <p class="mv__catch"><img src="./img/mv/header-text.svg" alt=""></p>
+        <div class="mv__badge">
+          <img src="./img/mv/badge.svg" alt="満足度100% ※2022年3月時点、当社独自調査により算出">
+        </div>
       </header>
 
       <section class="course" id="course">
@@ -105,7 +107,7 @@
             </h3>
 
             <p class="curriculum__text t-14-regular-lh25-2">
-              AZAMINA進学スクールでは、豊富なカリキュラムの中から、
+              AZAMINA進学スクールでは、豊富なカリキュラムの中から、<br class="u-pc-only">
               自分にあったカリキュラムを選択していただけます。
             </p>
 
@@ -155,12 +157,16 @@
               </picture>
               <div class="introduction__point">
                 <img class="introduction__point-image" src="img/course/point-1.png" alt="" width="350" height="212">
-                <h5 class="introduction__point-title t-16-bold-lh16">計算されたカリキュラム</h5>
-                <p class="introduction__point-text t-14-regular">当スクールのカリキュラムは、
-                  <span
-                    class="introduction__highlight t-14-bold">独自のAIシステム</span>を使用して過去の試験内容を解析することで、重要な部分を効率よく学習することができるようにした
-                  <span class="introduction__highlight t-14-bold">オリジナルのカリキュラム</span>です。
-                </p>
+                <div>
+                  <h5 class="introduction__point-title t-16-bold-lh16">計算されたカリキュラム</h5>
+                  <p class="introduction__point-text t-14-regular">当スクールのカリキュラムは、
+                    <span class="introduction__highlight t-14-bold">
+                      独自のAIシステム</span>を使用して過去の試験内容を解析
+                    することで、重要な部分を効率よく学習することができるようにした
+                    <span class="introduction__highlight t-14-bold">
+                      オリジナルのカリキュラム</span>です。
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -175,9 +181,9 @@
               </picture>
             </h3>
             <p class="satisfaction__text t-14-regular-lh25-2">
-              AZAMINA進学スクールは、講座を受講した全ての生徒から
-              非常に高い満足度を得ています。
-              受講前のカウンセリングをしっかりと行い、
+              AZAMINA進学スクールは、講座を受講した全ての生徒から<br class="u-pc-only">
+              非常に高い満足度を得ています。<br class="u-pc-only">
+              受講前のカウンセリングをしっかりと行い、<br class="u-pc-only">
               結果につながるカリキュラムをご提案いたします。
             </p>
           </div>
@@ -197,9 +203,9 @@
             </h3>
 
             <p class="teacher__text t-14-regular-lh25-2">
-              AZAMINA進学スクールの講師陣は、高い選考基準をクリアした
-              よりすぐりのメンバーだけで構成されています。
-              ただ学力や知識のレベルが高いだけでなく指導方法の引き出しも豊富なため、
+              AZAMINA進学スクールの講師陣は、高い選考基準をクリアした<br class="u-pc-only">
+              よりすぐりのメンバーだけで構成されています。<br class="u-pc-only">
+              ただ学力や知識のレベルが高いだけでなく指導方法の引き出しも豊富なため、<br class="u-pc-only">
               生徒の理解度を把握しながら最適な指導で目標達成へ導きます。
             </p>
 
@@ -287,7 +293,7 @@
             </p>
 
             <div class="result__content">
-              <img src="./img/feature/result/graph.svg" alt="">
+              <img class="result__img" src="./img/feature/result/graph.svg" alt="">
             </div>
 
             <p class="result__voice-title t-14-bold-lh14-content-title">生徒の声</p>
@@ -322,10 +328,9 @@
             </h3>
 
             <p class="follow__text">
-              AZAMINA進学スクールは、受講中だけでなく
-              受講後のサポートにも力を入れています。
-              生徒が安心して勉強に専念できるように、
-              万全のサポート体制を整えています。
+              AZAMINA進学スクールは、受講中だけでなく<br class="u-pc-only">
+              受講後のサポートにも力を入れています。<br class="u-pc-only">
+              生徒が安心して勉強に専念できるように、万全のサポート体制を整えています。
             </p>
           </div>
 
@@ -362,11 +367,11 @@
             結果を大切にする
           </h2>
 
-          <p class="message__text t-14-bold">
-            当スクールは、まず何よりも「<span class="message__emphasis">志望大学への合格</span>」<br>
+          <p class="message__text t-14-regular">
+            当スクールは、まず何よりも「<span class="message__emphasis t-14-bold">志望大学への合格</span>」<br>
             という結果を一番大切に考えています。<br>
             講習の中だけでは足りない部分を、<br>
-            講習後に<span class="message__emphasis">継続してフォロー</span>していくことで目標達成へ導きます。
+            講習後に<span class="message__emphasis t-14-bold">継続してフォロー</span>していくことで目標達成へ導きます。
           </p>
         </div>
       </section>
@@ -377,7 +382,6 @@
       <a href="" target="_blank" class="footer__cta t-20-bold-lh20">お問い合わせ</a>
     </footer>
   </div>
-
 
 </body>
 
